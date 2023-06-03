@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="503.0" prefWidth="854.0" style="-fx-background-color: #082d5d;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoginController">
+    <children>
+        <AnchorPane prefHeight="503.0" prefWidth="382.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="100.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/logo.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+        <Pane layoutX="488.0" layoutY="188.0" AnchorPane.bottomAnchor="50.0" AnchorPane.topAnchor="170.0">
+            <children>
+                <Label text="Username" layoutX="-55.0" layoutY="23.0" textFill="#c6a212" style="-fx-font-size: 14px; -fx-font-weight: bold;"/>
+                <TextField fx:id="txtUsername" layoutX="30.0" layoutY="20.0" prefHeight="34.0" prefWidth="275.0" promptText="username or email" />
+                <Label text="Password" layoutX="-55.0" layoutY="84.0" textFill="#c6a212" style="-fx-font-size: 14px; -fx-font-weight: bold;"/>
+                <PasswordField fx:id="txtPassword" layoutX="30.0" layoutY="80.0" prefHeight="34.0" prefWidth="275.0" promptText="password" stylesheets="@fullpackstyling.css" />
+                <Button fx:id="btnSignin" layoutX="105.0" layoutY="146.0" mnemonicParsing="false" onMouseClicked="#handleButtonAction" prefHeight="34.0" prefWidth="137.0" stylesheets="@../styling/fullpackstyling.css" text="Sign in" />
+                <Label fx:id="lblErrors" alignment="CENTER" layoutX="28.0" layoutY="180.0" prefHeight="23.0" prefWidth="275.0" textFill="#ff6354">
+                    <font>
+                        <Font name="Segoe UI" size="10.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
+

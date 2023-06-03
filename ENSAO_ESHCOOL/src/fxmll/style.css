@@ -1,0 +1,203 @@
+
+
+.VBox {
+    -fx-background-color: #ffffff; /* Set your desired background color */
+}
+
+
+
+.Label{
+	-fx-font-size:15px;
+	-fx-text-fill: #082d5d;
+	-fx-underline: true;
+	-fx-font-weight: bold;
+	
+	
+}
+
+
+
+.inputLabel{
+	-fx-text-fill: white;
+	-fx-underline: false;
+	-fx-font-weight: bold;
+	
+	
+}
+
+/* .students-label{
+	 -fx-font-size: 30px;
+	 -fx-font-family: "Helvetica";
+	 -fx-underline: true;
+    -fx-text-fill: white;
+}*/
+
+.TitleLabel{
+	-fx-font-size: 30px;
+	 -fx-font-family: "Helvetica";
+	 -fx-underline: true;
+    -fx-text-fill: white;
+	
+}
+
+.addButton{
+	-fx-background-color: #01A456; /* Green background color */
+    -fx-text-fill: white; /* Text color */
+    -fx-padding: 8px 16px; /* Padding around the button */
+    -fx-border-radius: 4px; /* Rounded corners */
+    -fx-font-size: 14px; /* Font size */
+    -fx-min-width: 120px; /* Minimum width of the button */
+    -fx-pref-width: 160px; /* Preferred width of the button */
+    -fx-max-width: 200px; /* Maximum width of the button */
+    -fx-font-size: 17px;
+	
+}
+
+.addButton:hover {
+    -fx-background-color: #02A049; /* Darker green color on hover */
+}
+
+.addButton:pressed {
+    -fx-background-color: #3C893D; /* Even darker green color when pressed */
+}
+
+
+
+.deleteButton{
+	-fx-background-color:#D50000; /* Green background color */
+    -fx-text-fill: white; /* Text color */
+    -fx-padding: 8px 16px; /* Padding around the button */
+    -fx-border-radius: 4px; /* Rounded corners */
+    -fx-font-size: 14px; /* Font size */
+    -fx-min-width: 120px; /* Minimum width of the button */
+    -fx-pref-width: 160px; /* Preferred width of the button */
+    -fx-max-width: 200px; /* Maximum width of the button */
+    -fx-font-size: 17px;
+}
+
+
+
+.deleteButton:hover {
+    -fx-background-color: #F90000; /* Darker red color on hover for delete button */
+}
+
+.deleteButton:pressed {
+    -fx-background-color: #FF0000; /* Even darker red color when pressed for delete button */
+}
+
+
+
+.updateButton{
+	-fx-background-color: #FFD013; /* Green background color */
+    -fx-text-fill: white; /* Text color */
+    -fx-padding: 8px 16px; /* Padding around the button */
+    -fx-border-radius: 4px; /* Rounded corners */
+    -fx-font-size: 14px; /* Font size */
+    -fx-min-width: 120px; /* Minimum width of the button */
+    -fx-pref-width: 160px; /* Preferred width of the button */
+    -fx-max-width: 200px; /* Maximum width of the button */
+    -fx-font-size: 17px;
+	
+	
+	
+}
+
+.updateButton:hover {
+    -fx-background-color: #C6A230; /* Darker blue color on hover for update button */
+}
+
+.updateButton:pressed {
+    -fx-background-color: #1976D2; /* Even darker blue color when pressed for update button */
+}
+
+.viewbutton{
+	
+    -fx-background-color: #34A2A6; /* Green background color */
+    -fx-text-fill: white; /* Text color */
+    -fx-padding: 8px 16px; /* Padding around the button */
+    -fx-border-radius: 4px; /* Rounded corners */
+    -fx-font-size: 14px; /* Font size */
+    -fx-min-width: 120px; /* Minimum width of the button */
+    -fx-pref-width: 160px; /* Preferred width of the button */
+    -fx-max-width: 200px; /* Maximum width of the button */
+    -fx-font-size: 17px;
+	
+	
+}
+
+.viewbutton:hover {
+    -fx-background-color: #44A2A6; /* Darker blue color on hover for update button */
+}
+
+.text-field {
+    -fx-background-color: #d7d7d7; /* Background color */
+    -fx-border-color: #9e9e9e; /* Border color */
+    -fx-border-radius: 4px; /* Rounded corners */
+    -fx-padding: 6px 8px; /* Padding inside the input box */
+    -fx-font-size: 14px; /* Font size */
+}
+
+.text-field:focus {
+    -fx-border-color: #2196F3; /* Border color when focused */
+}
+
+
+.scene-background {
+    -fx-background-color: #f3f3f3; /* Background color for the entire scene */
+}
+
+.table-view {
+    -fx-background-color: #F5F5F5; /* Background color for the table */
+}
+.table-cell {
+    -fx-alignment: CENTER;
+  
+    -fx-border-color: black ; -fx-border-width: 0.05px;	
+    -fx-background-color: #f5f5f5;	
+    
+    			 /* Center align the content in table cells */
+}
+
+.table-row-cell:odd {
+    -fx-background-color: white; /* Alternate row color */
+}
+
+
+/*----------------------------------------------------------------------------------- */
+
+#nameLabel {
+    -fx-font-size: 18px;
+    -fx-text-fill: white;
+    
+    
+}
+
+#emailLabel {
+    -fx-font-size: 14px;
+    -fx-text-fill: white;
+}
+
+#levelLabel {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+#Printbutton{
+	-fx-background-color: #c6a212; /* Green background color */
+    -fx-text-fill: white; /* Text color */
+    -fx-padding: 8px 16px; /* Padding around the button */
+    -fx-border-radius: 10px; /* Rounded corners */
+    -fx-font-size: 14px; /* Font size */
+    -fx-min-width: 120px; /* Minimum width of the button */
+    -fx-pref-width: 160px; /* Preferred width of the button */
+    -fx-max-width: 200px; /* Maximum width of the button */
+    -fx-font-size: 17px;
+	
+}
+.background {
+    -fx-background-image: url("../images/I2.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+}
+

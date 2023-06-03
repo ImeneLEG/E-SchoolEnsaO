@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
+    <top>
+        <Label text="ENSAO-Students" styleClass="TitleLabel"  alignment="CENTER"/>
+    </top>
+    <center>
+        <TableView fx:id="table" styleClass="table-view">
+            <columns>
+                <TableColumn text="Id">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="id"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="First Name">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="firstname"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Last Name">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="lastname"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Email">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="email"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Level">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="level"/>
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+    </center>
+    <left>
+        <VBox alignment="CENTER" spacing="20" stylesheets="@style.css">
+            <Label text="First name:" styleClass="inputLabel" stylesheets="@style.css"/>
+            <TextField fx:id="firstnameInput" promptText="First Name" minWidth="100" styleClass="text-field" stylesheets="@style.css"/>
+            <Label text="Last name:" styleClass="inputLabel" stylesheets="@style.css"/>
+            <TextField fx:id="lastnameInput" promptText="Last Name" minWidth="100" styleClass="text-field" stylesheets="@style.css"/>
+            <Label text="Academic Email:" styleClass="inputLabel" stylesheets="@style.css"/>
+            <TextField fx:id="emailInput" promptText="Academic Email" minWidth="100" styleClass="text-field" stylesheets="@style.css"/>
+            <Label text="Level:" styleClass="inputLabel" stylesheets="@style.css"/>
+            <TextField fx:id="levelInput" promptText="Level" minWidth="100" styleClass="text-field" stylesheets="@style.css"/>
+            <HBox spacing="10" stylesheets="@style.css">
+                <VBox spacing="15" stylesheets="@style.css">
+                    <Button text="Add" onAction="#addButtonClicked" styleClass="addButton" stylesheets="@style.css"/>
+                    <Button text="Delete" onAction="#deleteButtonClicked" styleClass="deleteButton" stylesheets="@style.css"/>
+                </VBox>
+                <VBox spacing="15" stylesheets="@style.css">
+                    <Button text="Update" onAction="#updateButtonClicked" styleClass="updateButton" stylesheets="@style.css"/>
+                    <Button text="View Profile" onAction="#viewButtonClicked" styleClass="viewbutton" stylesheets="@style.css"/>
+                </VBox>
+            </HBox>
+        </VBox>
+    </left>
+</BorderPane>
